@@ -1,0 +1,184 @@
+html,
+body {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    color: $colorText;
+    font-family: 'Open Sans', 'Helvetica', 'Arial', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+#app {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.testapp-wrapper {
+    margin: 0 auto;
+    max-width: 1440px;
+}
+
+.testapp-box {
+    padding: 40px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 0 1px rgba(#000, 0.05), 0 5px 20px rgba(#000, 0.1);
+}
+
+label {
+    display: block;
+    font-weight: 600;
+
+    &.testapp-searchbar {
+        display: -webkit-inline-box;
+        display: -ms-inline-flexbox;
+        display: inline-flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        position: relative;
+
+        i {
+            position: absolute;
+            left: 10px;
+        }
+
+        input {
+            padding: 6px 9px 6px 32px;
+            font-weight: 400;
+        }
+    }
+}
+
+input {
+    border: 1px solid #ccc;
+    outline: none;
+    font-weight: 600;
+
+    &:focus {
+        border-color: $colorMain;
+    }
+
+    &.testapp-error {
+        border-color: $colorError;
+    }
+
+    &[type="text"],
+    &[type="search"],
+    &[type="email"],
+    &[type="password"] {
+        border-radius: 4px;
+        padding: 6px 12px;
+        letter-spacing: -0.15px;
+    }
+}
+
+.testapp-btn {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 7px 12px;
+    border: 1px solid $colorMain;
+    border-radius: 4px;
+    background: $colorMain;
+    color: #fff;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: -0.154px;
+    text-align: center;
+
+    &--alt {
+        border-color: $colorBorder;
+        background: #fff;
+        color: $colorText;
+    }
+
+    &--ghost {
+        border-color: transparent;
+        background: transparent;
+        color: #808080;
+    }
+
+    &--icon {
+        position: relative;
+        padding-left: 32px;
+
+        i {
+            position: absolute; 
+            top: 12px;
+            left: 12px;
+        }
+    }
+
+    i {
+        width: 12px;
+        height: 12px;
+    
+        &:before {
+            position: relative;
+            left: -4px;
+            top: -2px;
+            font-size: 22px;
+            line-height: 12px;
+        }
+    }
+}
+
+.testapp-logo {
+    width: 40px;
+    height: 40px;
+    background: url(./assets/logo.png) center no-repeat;
+    background-size: contain;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0.364px;
+}
+
+h2 {
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: -0.408px;
+}
+
+h6 {
+    color: $colorTextMedium;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 12px;
+    letter-spacing: 0.07px;
+    text-transform: uppercase;
+}
+
+table {
+    thead {
+        tr {
+            th {
+                color: $colorTextMedium;
+                font-size: 11px;
+                font-weight: 600;
+                line-height: 12px;
+                letter-spacing: 0.066px;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}

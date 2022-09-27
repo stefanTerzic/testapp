@@ -1,0 +1,42 @@
+.testapp-currency-action {
+    width: 440px;
+    border-left: 1px solid rgba(#000, 0.15);
+    border-right: 1px solid rgba(#000, 0.15);
+
+    .testapp-currency-action-header {
+        position: relative;
+        padding: 12px 24px 12px 12px;
+        border-bottom: 1px solid rgba(#000, 0.15);
+
+        h2 {
+            margin: 0;
+
+            button {
+                margin-right: 6px;
+            }
+        }
+
+        button {
+            margin-left: 8px;
+
+            &:first-of-type {
+                margin-left: auto;
+            }
+        }
+    }
+
+    form {
+        padding: 12px 24px;
+
+        .testapp-message {
+            color: $colorError;
+            font-size: 10px;
+            line-height: 14px;
+            letter-spacing: 0.12px;
+        }
+
+        input {
+            width: 100%;
+        }
+    }
+}
